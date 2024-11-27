@@ -1,0 +1,299 @@
+/* DEFAULT SETTINGS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body.index {
+    background-image: url("https://static.pexels.com/photos/28061/pexels-photo.jpg");
+    padding-top: 95px;
+    background-size: 110%;
+    background-position: center;
+    background-color: #000;
+    background-attachment: scroll;
+  }
+
+  
+ body.treino {
+  background-image: url("../img/10-beneficios-do-treinamento-de-forca.png");
+  padding-top: 95px;
+  background-size: 155%;
+  background-position: center;
+  background-color: #000;
+  background-attachment: scroll;
+}
+  
+body.faq {
+    background-image: url("../img/acoes-para-motivar-alunos-na-academia-scaled.png");
+    margin-top: 200px;
+    background-size: 125%;
+    background-position: center;
+    background-color: #000;
+    background-attachment: scroll;
+  }
+  @media (min-width: 768px) {
+    body {
+      background-attachment: fixed;
+    }
+  }
+  
+  ul,
+  ol,
+  li {
+    margin: 2px 0 0 20px;
+  }
+  
+  li.nested {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  h1,
+  h2,
+  p,
+  li,
+  th,
+  td,
+  figure,
+  input[type="submit"],
+  button {
+    color: #fff;
+    font-family: "Chivo", sans-serif;
+    font-weight: 300;
+    font-size: 1.15rem;
+  }
+  
+  /* LINKS AND NAV */
+  a,
+  a:visited {
+    color: #ff8c00;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ffd700;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+    background: #000;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+  }
+  
+  nav li a,
+  nav li a:visited {
+    font-size: 1rem;
+    color: #bbb;
+    padding: 3px 10px;
+    text-transform: uppercase;
+  }
+  
+  nav li a:hover,
+  .current-page {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* FOOTER */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 20;
+    background: #000;
+    color: #fff;
+  }
+  
+  footer p {
+    font-size: .8em;
+    padding: 0 0 0 5px;
+    color: #696969;
+  }
+  
+  /* CONTENT */
+  .main {
+    width: 50%;
+    position: relative;
+    top: center;
+    left: 15%;
+    padding-bottom: 130px;
+  }
+  
+  .fill {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px #000;
+    padding: 20px;
+  }
+  
+  h1.splash-title {
+    font-size: 5em;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-weight: 900;
+    padding-bottom: 10px;
+  }
+  
+  p {
+    font-weight: 300;
+    padding: 10px 0px;
+  }
+  
+  p.splash-subtitle {
+    font-weight: 400;
+    font-size: 1.75em;
+    text-shadow: 2px 2px 5px #000;
+    padding: 20px;
+  }
+  
+  strong {
+    font-weight: 400;
+  }
+  
+  strong.super-bold {
+    font-weight: 900;
+  }
+  
+  /* IMAGES */
+  figure {
+    max-width: 540px;
+    text-align: center;
+    font-size: 1em;
+    background: #000;
+    color: #fff;
+    margin: 20px auto;
+  }
+  
+  figcaption {
+    padding: 8px;
+    font-style: italic;
+    color: #bbb;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* TABLES */
+  .auto-scroll {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th,
+  td {
+    padding: 5px;
+  }
+  
+  th {
+    text-align: left;
+    background-color: #000;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  /* BUTTONS */
+  input[type="submit"],
+  button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  form.splash-button {
+    padding: 20px;
+  }
+  
+  /* ACCORDION */
+  .question {
+    width: 100%;
+    margin: 5px 0 0 0;
+    background: #000;
+    border-color: #000;
+    outline: none;
+  }
+  
+  .question::first-letter,
+  .answer::first-letter {
+    font-weight: 400;
+  }
+  
+  .open {
+    background: #fff;
+    color: #000;
+  }
+  
+  .answer {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .answer p {
+    padding: 30px;
+  }
+  
+  /* SPLASH ANIMATION */
+  #splash {
+    animation: fadeIn 2s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
